@@ -1,25 +1,21 @@
 class View {
     static helpCommand(data) {
         console.log("Command_list:")
-        data.forEach(command => {
-            const { id, task, command } = command
-            console.log(`${id}. ${task}, ${command}`)
-        })
-    }
-    static group(tambah) {
-        const [type, filteredData] = tambah
-        console.log(type + " List : ")
-        filteredData.forEach(command => {
-            const { id, task, command } = command
-            console.log(`${id}. ${task}, ${command}`)
-        })
-    }
-    static find(tambah){
-        // const {id, name, type, command, stock} = tambah
-        console.table(tambah)
-    }
-    static message(msg) {
-        console.log(msg)
-    }
+        // node todo.js help
+        // node todo.js list  
+        // node todo.js add <task>
+        // node todo.js update <id> <task>
+        // node todo.js delete <id>
+        // node todo.js complete <id>
+        // node todo.js uncomplete <id></id>
+        console.log("node todo.js help");
+        console.log("node todo.js add <task>");
+        console.log("node todo.js update <id> <task>");
+        console.log("node todo.js delete <id>");
+        console.log("node todo.js complete <id>");
+        console.log("node todo.js uncomplete <id></id>");
+
 }
-module.exports = View
+}
+
+module.exports = View;

@@ -1,19 +1,10 @@
-
 const View = require('../views/View')
 const Command = require('../models/Command')
 
-
-
 class Controller {
     static helpCommand(){
-        console.log("show Command dalam controller")
-    }
-}
-class Controller {
-    static helpCommand(){
-        let stationaries = Command.getCommand()
-        View.helpCommand(stationaries)
-        // console.log("helpCommand dalam controller")
+        View.helpCommand()
+
     }
     static listCommand(tambah){
         Command.listCommand(tambah)
