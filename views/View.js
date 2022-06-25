@@ -1,13 +1,8 @@
+const Command = require("../models/Command");
+
 class View {
-    static helpCommand(data) {
+    static helpCommand() {
         console.log("Command_list:")
-        // node todo.js help
-        // node todo.js list  
-        // node todo.js add <task>
-        // node todo.js update <id> <task>
-        // node todo.js delete <id>
-        // node todo.js complete <id>
-        // node todo.js uncomplete <id></id>
         console.log("node todo.js help");
         console.log("node todo.js add <task>");
         console.log("node todo.js update <id> <task>");
@@ -15,7 +10,15 @@ class View {
         console.log("node todo.js complete <id>");
         console.log("node todo.js uncomplete <id></id>");
 
+    }
+    static listCommand(){
+       console.log(`id[], Belajar Node.js.`);
+       console.log(`id[], Download Stream`);
+       
+
+    }
 }
-}
+
+
 
 module.exports = View;
