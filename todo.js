@@ -6,7 +6,7 @@ const Controller = require('./controllers/Controller');
 
 switch (command.toLowerCase()) {
     case 'help':
-        Controller.helpCommand()
+        Controller.helpCommand(tambah)
         break;
     case 'list':
         Controller.listCommand(tambah)

@@ -9,7 +9,7 @@ class Command {
         this.completed_at = completed_at;
     }
 
-    static listCommand() {
+    static listCommand  () {
         let commands = JSON.parse(fs.readFileSync('./data.json', 'utf8'))
         commands = commands.map(Command => {
             const { id, tasks, created_at, status, completed_at } = Command
