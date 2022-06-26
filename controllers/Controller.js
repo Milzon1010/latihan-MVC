@@ -6,9 +6,9 @@ class Controller {
         View.helpCommand()
 
     }
-    static commandList(){
-        let commands = Command.getItems()
-        View.commandList(commands)
+    static listCommand(){
+        let commands = Command.getCommands()
+        View.listCommand(commands)
  
     }   
     static addItem(){

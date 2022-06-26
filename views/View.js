@@ -1,4 +1,3 @@
-const { commandList } = require("../controllers/Controller");
 const Command = require("../models/Command");
 
 class View {
@@ -14,11 +13,12 @@ class View {
     }
     static listCommand(data){
        console.log("commands list");
-       data.forEach(commandList => {
-        const { id, task } = commandList
-        console.log(`${id}. ${task}`)
-        }
+       console.log(data);
+
+
     }
 }
+
+
 
 module.exports = View;
