@@ -9,7 +9,7 @@ switch (command.toLowerCase()) {
         Controller.helpCommand(tambah)
         break;
     case 'list':
-        Controller.listCommand(tambah)
+        Controller.commandList(tambah)
         break;
     case 'add':
         Controller.addCommand(tambah)
