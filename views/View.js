@@ -11,9 +11,9 @@ class View {
         console.log("node todo.js uncomplete <id></id>");
 
     }
-    static listCommand(){
-       console.log(`id[], Belajar Node.js.`);
-       console.log(`id[], Download Stream`);
+    static listCommand(data){
+       console.log("commands list");
+       console.log(data);
 
 
     }

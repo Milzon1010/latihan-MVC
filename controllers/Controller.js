@@ -7,8 +7,8 @@ class Controller {
 
     }
     static listCommand(){
-        let commands = Command.listCommand()
-        View.listCommand()
+        let commands = Command.getCommands()
+        View.listCommand(commands)
  
     }   
     static addItem(){
