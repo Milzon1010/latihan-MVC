@@ -11,11 +11,12 @@ class View {
         console.log("node todo.js uncomplete <id></id>");
 
     }
-    static listCommand(data){
-       console.log("commands list");
-       console.log(data);
-
-
+    static listCommand(data) {
+        console.log("Command List:")
+        data.forEach(command => {
+            const { id, task } = command
+            console.log(`${id}. ${task}}`)
+        })
     }
 }
 

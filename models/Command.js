@@ -2,18 +2,20 @@ const fs = require('fs');
 const { type } = require('os');
 
 class Command {
-    constructor(id, tasks, created_at, status, completed_at) {
+    constructor(id, task) {
         this.id = id;
         this.task = task;
-    }
-    static getCommands  () {
-        let commands = JSON.parse(fs.readFileSync('./data.json', 'utf8'))
-        commands = commands.map(commandList => {
-            const { id, task } = commandList
    
-        })
-       return commands
     }
-}
+    static listCommand() {
+        let commandList = JSON.parse(fs.readFileSync('./data.json', 'utf8'))
+        commandList = commandList.map(command => {
+            const { id, task } = command
+       
+        })
+    }  
 
-module.exports = Command;
+    
+    
+}
+    module.exports  = Command;
