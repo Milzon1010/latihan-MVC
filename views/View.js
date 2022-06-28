@@ -1,4 +1,4 @@
-const Command = require("../models/Command");
+const fs = require('fs');
 
 class View {
     static helpCommand() {
