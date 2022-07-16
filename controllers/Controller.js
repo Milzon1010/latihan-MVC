@@ -11,10 +11,9 @@ class Controller {
         View.listCommand(commandList)
  
     }   
-  
-   
-
-
+    static addCommand(tambah){
+        Command.addCommand(tambah)
+    }
 
 }
 

@@ -1,4 +1,4 @@
-const fs = require('fs');
+const Command = require("../models/Command");
 
 class View {
     static helpCommand() {
@@ -11,13 +11,12 @@ class View {
         console.log("node todo.js uncomplete <id></id>");
 
     }
-    static listCommand(commands) {
-        console.log("Command List:")
-    
-        }
+    static listCommand(data){
+       console.log(data);
     }
 
-
+    
+}
 
 
 module.exports = View;
